@@ -3,7 +3,14 @@ from django.shortcuts import render
 
 
 def index(request) -> HttpResponse:
-    return HttpResponse("Home Page")
+    context = {
+        "title": "Main page test",
+        "content": "Main page content. Check this",
+        "list": ["one", "two", "one-two"],
+        "show": True,
+    }
+
+    return render(request, "main.index.html", context)
 
 
 def about(request) -> HttpResponse:
