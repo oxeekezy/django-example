@@ -4,13 +4,12 @@ from django.shortcuts import render
 
 def index(request) -> HttpResponse:
     context = {
-        "title": "Main page test",
-        "content": "Main page content. Check this",
-        "list": ["one", "two", "one-two"],
-        "show": True,
+        "title": "Welcome to Cheglock",
+        "name": "Cheglock Sokol Creation",
+        "motto": "Сообщество креативных людей",
     }
 
-    return render(request, "main.index.html", context)
+    return render(request, "main/index.html", context)
 
 
 def about(request) -> HttpResponse:
