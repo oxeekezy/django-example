@@ -19,27 +19,21 @@
                         {% for product in merch %}
                         <div class="h-100 col-4 col-6-medium col-12-small">
                             <section class="box">
-                                <a href="#" class="image featured"
-                                    ><img src="{% static "images/pic02.jpg" %}"
-                                    alt="" /></a
-                                >
+                                <a href="#" class="image featured">
+                                    
+                                    {% if product.image %}
+                                        <img src="{{product.image.url}}" height="300" alt="Изображения пока нет" />
+                                    {% else %}
+                                        <img src="{% static "images/no_image.jpg" %}" height="300" alt="Изображения пока нет" />  
+                                    {% endif %}
+                                    
+                                </a>
                                 <header>
                                     <h3>{{product.name}}</h3>
                                 </header>
                                 <p>{{product.description}}</p>
-                                {% if product.sale != 0 %}
-                                    <div class="row">
-                                        <p class="nonbase-price">{{product.price}} Р</p>
-                                        <p class="sale-price">{{product.sale}} Р</p>
-                                    </div>
-                                {% else %}
-                                    <div class="row">
-                                        <p class="base-price">{{product.price}} Р</p>
-                                    </div>
-                                {% endif %}
+                                <p class="base-price">{{product.price}} Р</p>
                                 
-                                
-
                                 <footer>
                                     <ul class="actions">
                                         <li>

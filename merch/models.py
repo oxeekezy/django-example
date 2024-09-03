@@ -25,7 +25,7 @@ class Products(models.Model):
         max_length=500, blank=True, null=True, verbose_name="Описание"
     )
     image = models.ImageField(
-        upload_to="media/merch/images",
+        upload_to="merch/images",
         blank=True,
         null=True,
         verbose_name="Изображение",
