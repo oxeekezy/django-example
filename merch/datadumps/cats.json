@@ -1,0 +1,42 @@
+[
+    {
+        "model": "merch.categories",
+        "pk": 1,
+        "fields": {
+            "name": "Весь мерч",
+            "slug": "all"
+        }
+    },
+    {
+        "model": "merch.categories",
+        "pk": 2,
+        "fields": {
+            "name": "Одежда",
+            "slug": "odezhda"
+        }
+    },
+    {
+        "model": "merch.categories",
+        "pk": 3,
+        "fields": {
+            "name": "Музыкальное оборудование",
+            "slug": "muzykalnoe-oborudovanie"
+        }
+    },
+    {
+        "model": "merch.categories",
+        "pk": 5,
+        "fields": {
+            "name": "Спешл",
+            "slug": "speshl"
+        }
+    },
+    {
+        "model": "merch.categories",
+        "pk": 6,
+        "fields": {
+            "name": "Кастом",
+            "slug": "kastom"
+        }
+    }
+]

@@ -1,0 +1,4 @@
+# Создание дампа данных для определенной модели 
+! Xutf8 нужен, если возникает ошибка декодирования (как правило при кириллице)
+!                                 V->модель          V->путь к файлу  
+python -Xutf8  manage.py dumpdata merch.Categories > merch/datadumps/cats.json
