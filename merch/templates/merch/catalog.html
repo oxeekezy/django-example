@@ -27,12 +27,23 @@
                                     <h3>{{product.name}}</h3>
                                 </header>
                                 <p>{{product.description}}</p>
-                                <p class="text-primary">{{product.price}} Р</p>
+                                {% if product.sale != 0 %}
+                                    <div class="row">
+                                        <p class="nonbase-price">{{product.price}} Р</p>
+                                        <p class="sale-price">{{product.sale}} Р</p>
+                                    </div>
+                                {% else %}
+                                    <div class="row">
+                                        <p class="base-price">{{product.price}} Р</p>
+                                    </div>
+                                {% endif %}
+                                
+                                
 
                                 <footer>
                                     <ul class="actions">
                                         <li>
-                                            <a href="#" class="button alt">Подробнее</a>
+                                            <a href="{% url "merch:product" %}" class="button alt">Подробнее</a>
                                         </li>
                                         <li>
                                             <a href="#" class="button alt">
