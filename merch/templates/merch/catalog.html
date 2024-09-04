@@ -26,13 +26,26 @@
                                     {% else %}
                                         <img src="{% static "images/no_image.jpg" %}" height="300" alt="Изображения пока нет" />  
                                     {% endif %}
-                                    
                                 </a>
                                 <header>
                                     <h3>{{product.name}}</h3>
                                 </header>
                                 <p>{{product.description}}</p>
-                                <p class="base-price">{{product.price}} Р</p>
+                                <p>id: #{{product.display_id}}</p>
+
+                                {% if product.discount != 0 %}
+                                    <div class="row">
+                                        <p class="old-price">{{product.price}} Р</p>
+                                        <p class="sale-price">{{product.final_price}} Р</p>
+                                    </div>
+                                {% else %}
+                                    <div class="row">
+                                        <p class="base-price">{{product.final_price}} Р</p>
+                                    </div>
+                                {% endif %}
+
+
+                                
                                 
                                 <footer>
                                     <ul class="actions">
