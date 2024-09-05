@@ -1,33 +1,27 @@
-{% extends "main/base.html" %} {% load static %} {% block main_content %}
+{% extends "main/base.html" %} 
+{% load static %} 
+
+{% block main_content %}
 <section id="main">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <!-- Blog -->
                 <section>
-                    <header class="major">
-                        <h2>The Blog</h2>
-                    </header>
                     <div class="row">
                         <div class="col-md-8 offset-md-2">
                             <section class="box">
-                                <a href="#" class="image featured"
-                                    ><img src="{% static "images/pic09.jpg" %}"
-                                    alt="" /></a
-                                >
+                                {% if product.image %}
+                                    <img src="{{product.image.url}}" height="300" alt="Изображения пока нет" />
+                                {% else %}
+                                    <img src="{% static "images/no_image.jpg" %}" height="300" alt="Изображения пока нет" />  
+                                {% endif %}
                                 <header>
-                                    <h3>Aptent veroeros aliquam</h3>
-                                    <p>Posted 45 minutes ago</p>
+                                    <h3>{{ product.name }}</h3>
+                                    <p class = "base-price">{{ product.final_price }}</p>
                                 </header>
                                 <p>
-                                    Lorem ipsum dolor sit amet sit veroeros sed
-                                    et blandit consequat sed veroeros lorem et
-                                    blandit adipiscing feugiat phasellus tempus
-                                    hendrerit, tortor vitae mattis tempor,
-                                    sapien sem feugiat sapien, id suscipit magna
-                                    felis nec elit. Class aptent taciti sociosqu
-                                    ad litora torquent per conubia nostra, per
-                                    inceptos lorem ipsum dolor sit amet.
+                                    {{ product.large_description}}
                                 </p>
                                 <footer>
                                     <ul class="actions">

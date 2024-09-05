@@ -22,8 +22,13 @@ class Products(models.Model):
     )
     slug = models.SlugField(max_length=200, unique=True, blank=True, verbose_name="URL")
     description = models.TextField(
-        max_length=500, blank=True, null=True, verbose_name="Описание"
+        max_length=500, blank=True, null=True, verbose_name="Краткое описание"
     )
+
+    large_description = models.TextField(
+        max_length=1000, blank=True, null=True, verbose_name="Полное описание"
+    )
+
     image = models.ImageField(
         upload_to="merch/images",
         blank=True,

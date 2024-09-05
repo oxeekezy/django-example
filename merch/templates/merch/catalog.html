@@ -44,13 +44,10 @@
                                     </div>
                                 {% endif %}
 
-
-                                
-                                
                                 <footer>
                                     <ul class="actions">
                                         <li>
-                                            <a href="{% url "merch:product" %}" class="button alt">Подробнее</a>
+                                            <a href="{% url "merch:product" product.slug %}" class="button alt">Подробнее</a>
                                         </li>
                                         <li>
                                             <a href="#" class="button alt">

@@ -14,5 +14,12 @@ def catalog(request):
     return render(request, "merch/catalog.html", context)
 
 
-def product(request):
-    return render(request, "merch/product.html")
+def product(request, slug):
+    product = Products.objects.get(slug=slug)
+
+    if product.large_description is None:
+        product.large_description = product.description
+
+    context = {"product": product}
+
+    return render(request, "merch/product.html", context)
