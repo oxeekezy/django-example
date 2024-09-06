@@ -14,7 +14,24 @@
                 <section>
                     <header class="major">
                         <h2>Наш мерч</h2>
+
+                        <form class="filters-form" action="" method="get">
+                            <div class="filters-section">
+                                <button class="button" type="submit" name="discount" value="True" title="Товары по скидке">
+                                    <i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+                                </button>
+        
+                                <button class="button alt" type="submit" name="order_by" value="price" title="От дешевых к дорогим">
+                                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                </button>
+        
+                                <button class="button alt" type="submit" name="order_by" value="-price" title="От дорогих к дешевым">
+                                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                </button>  
+                            </div>
+                        </form>    
                     </header>
+
                     <div class="row">
                         {% for product in merch %}
                         <div class="h-100 col-4 col-6-medium col-12-small">
@@ -51,9 +68,8 @@
                                         </li>
                                         <li>
                                             <a href="#" class="button alt">
-                                                <i class="fa fa-opencart" aria-hidden="true"></i>
+                                                <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                                             </a>
-                                            
                                         </li>
                                     </ul>
                                 </footer>
@@ -66,4 +82,6 @@
         </div>
     </div>
 </section>
+
+
 {% endblock main_content %}
