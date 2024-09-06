@@ -28,6 +28,11 @@
                                 <button class="button alt" type="submit" name="order_by" value="-price" title="От дорогих к дешевым">
                                     <i class="fa fa-arrow-down" aria-hidden="true"></i>
                                 </button>  
+                                {% if request.GET%}
+                                    <button class="button alt" type="submit" name="" value="" title="Убрать фильтры">
+                                        <i class="fa fa-ban" aria-hidden="true"></i>
+                                    </button>
+                                {% endif %}
                             </div>
                         </form>    
                     </header>

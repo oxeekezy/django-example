@@ -26,8 +26,9 @@
                     <ul>
                         <li class="current"><a href="{% url "main:index" %}">Home</a></li>
                         <li>
-                            <a href="{% url "merch:catalog" "all"%}">Merch</a>
+                            <a href="{% url "merch:all_catalog"%}">Merch</a>
                             <ul>
+                                <li><a href="{% url "merch:all_catalog"%}">Весь мерч</a></li>
                                 {%categories_tag as categories%}
                                 {% for category in categories %}
                                     <li><a href="{% url "merch:catalog" category.slug%}">{{category.name}}</a></li>
