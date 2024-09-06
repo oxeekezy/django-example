@@ -2,8 +2,11 @@ from django.shortcuts import render
 from merch.models import Products
 
 
-def catalog(request):
-    merch = Products.objects.all()
+def catalog(request, slug):
+    if slug == "all":
+        merch = Products.objects.all()
+    else:
+        merch = Products.objects.filter(category__slug=slug)
 
     context = {
         "title": "Чеглок Мерч",
