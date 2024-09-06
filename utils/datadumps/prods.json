@@ -1,0 +1,107 @@
+[
+    {
+        "model": "merch.products",
+        "pk": 1,
+        "fields": {
+            "name": "╨ñ╨╗╤Å╨│╨░",
+            "slug": "flyaga",
+            "description": "╨û╨╡╨╗╨╡╨╖╨╜╨░╤Å ╤ä╨╗╤Å╨│╨░ ╤ü ╨│╤Ç╨░╨▓╨╕╤Ç╨╛╨▓╨║╨╛╨╣ Cheglock Tourist Special",
+            "large_description": null,
+            "image": "",
+            "price": "2999.00",
+            "discount": "0.00",
+            "count": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "merch.products",
+        "pk": 2,
+        "fields": {
+            "name": "╨ñ╨╗╨░╨│ Cheglock World",
+            "slug": "flag-cheglock-world",
+            "description": "╨¥╨╡╨┐╤Ç╨╛╨╖╤Ç╨░╤ç╨╜╤ï╨╣ ╤ä╨╗╨░╨│ ╤ü ╤ä╨╕╤Ç╨╝╨╡╨╜╨╜╤ï╨╝ ╨╗╨╛╨│╨╛ Cheglock World",
+            "large_description": null,
+            "image": "",
+            "price": "1200.00",
+            "discount": "10.00",
+            "count": 90,
+            "category": 5
+        }
+    },
+    {
+        "model": "merch.products",
+        "pk": 3,
+        "fields": {
+            "name": "╨¿╤é╨░╨╜╤ï ╨║╨░╤Ç╨│╨╛",
+            "slug": "shtany-kargo",
+            "description": "╨¿╤é╨░╨╜╤ï ╨║╨░╤Ç╨│╨╛ ╤ü ╨╜╨░╤ê╨╕╨▓╨║╨╛╨╣ Cheglock Masters ╨╜╨░ ╨╖╨░╨┤╨╜╨╡╨╝ ╨║╨░╤Ç╨╝╨░╨╜╨╡",
+            "large_description": null,
+            "image": "",
+            "price": "3500.00",
+            "discount": "0.00",
+            "count": 20,
+            "category": 2
+        }
+    },
+    {
+        "model": "merch.products",
+        "pk": 4,
+        "fields": {
+            "name": "╨Ü╨░╨▒╨╡╨╗╤î Jack",
+            "slug": "kabel-jack",
+            "description": "╨í╤é╨╡╤Ç╨╡╨╛ ╨║╨░╨▒╨╡╨╗╤î Jack 6.3 - Jack 6.3 ╨┤╨╗╤Å ╨┐╨╛╨┤╨║╨╗╤Ä╤ç╨╡╨╜╨╕╤Å ╨╝╤â╨╖╤ï╨║╨░╨╗╤î╨╜╨╛╨│╨╛ ╨╛╨▒╨╛╤Ç╤â╨┤╨╛╨▓╨░╨╜╨╕╤Å",
+            "large_description": null,
+            "image": "merch/images/cabel.png",
+            "price": "1999.00",
+            "discount": "0.00",
+            "count": 13,
+            "category": 3
+        }
+    },
+    {
+        "model": "merch.products",
+        "pk": 5,
+        "fields": {
+            "name": "╨í╤â╨╝╨║╨░ ╨┤╨╗╤Å ╨▓╨╕╨╜╨╕╨╗╨░",
+            "slug": "sumka-dlya-vinila",
+            "description": "╨í╤â╨╝╨║╨░ ╨┤╨╗╤Å ╨▓╨╕╨╜╨╕╨╗╨░ \"Vinyl in me\" ╤ü ╤ä╨╕╤Ç╨╝╨╡╨╜╨╜╤ï╨╝ ╨╗╨╛╨│╨╛╤é╨╕╨┐╨╛╨╝",
+            "large_description": null,
+            "image": "merch/images/shopper.png",
+            "price": "999.00",
+            "discount": "5.00",
+            "count": 99,
+            "category": 5
+        }
+    },
+    {
+        "model": "merch.products",
+        "pk": 6,
+        "fields": {
+            "name": "╨Æ╨╕╨╜╨╕╨╗╨╛╨▓╨░╤Å ╨┐╨╗╨░╤ü╤é╨╕╨╜╨║╨░",
+            "slug": "vinilovaya-plastinka",
+            "description": "╨Æ╨╕╨╜╨╕╨╗╨╛╨▓╨░╤Å ╨┐╨╗╨░╤ü╤é╨╕╨╜╨║╨░ ╤ü ╨╖╨░╨┐╨╕╤ü╤î╤Ä ╨╝╨╕╨║╤ü╨░ ╤ü ╨▓╨╡╤ç╨╡╤Ç╨╕╨╜╨║╨╕ ╨▓ ╨Ü╨░╨╗╨╕╨╜╨╕╨╜╨│╤Ç╨░╨┤╨╡ \"Techno cheglock mix pt.1\"",
+            "large_description": "╨Æ╨╕╨╜╨╕╨╗╨╛╨▓╨░╤Å ╨┐╨╗╨░╤ü╤é╨╕╨╜╨║╨░ ╤ü ╨╖╨░╨┐╨╕╤ü╤î╤Ä ╨╝╨╕╨║╤ü╨░ ╤ü ╨▓╨╡╤ç╨╡╤Ç╨╕╨╜╨║╨╕ ╨▓ ╨Ü╨░╨╗╨╕╨╜╨╕╨╜╨│╤Ç╨░╨┤╨╡ \"Techno cheglock mix pt.1\". ╨Ü╨░╤ç╨╡╤ü╤é╨▓╨╡╨╜╨╜╨╛ ╨╖╨░╨┐╨╕╤ü╨░╨╜╨╜╤ï╨╣ ╨╝╨╕╨║╤ü ╨╜╨░ ╨▓╨╕╨╜╨╕╨╗╨╡ ╤ü ╨▒╤Ç╨╛╤ê╤â╤Ç╨╛╨╣ ╨╕ ╨░╨▓╤é╨╛╨│╤Ç╨░╤ä╨░╨╝╨╕ ╨▓╤ü╨╡╨╣ ╨║╨╛╨╝╨░╨╜╨┤╤ï.",
+            "image": "merch/images/vynil.png",
+            "price": "240000.00",
+            "discount": "0.00",
+            "count": 1,
+            "category": 5
+        }
+    },
+    {
+        "model": "merch.products",
+        "pk": 7,
+        "fields": {
+            "name": "╨Ü╨╛╤ê╨╡╨╗╨╡╨║ ╨╕╨╖ ╨║╨╛╨╢╨╕",
+            "slug": "koshelek-iz-kozhi",
+            "description": "╨Ü╨╛╤ê╨╡╨╗╨╡╨║ ╨╕╨╖ ╨║╨╛╤ê╨╕ ╤ü ╨║╨╗╨╡╨╣╨╝╨╛╨╝ Cheglock Need Money",
+            "large_description": "╨Ü╨╛╤ê╨╡╨╗╨╡╨║ ╨▓╤ï╨┐╨╛╨╗╨╜╨╡╨╜ ╤ü ╨╕╤ü╨┐╨╛╨╗╤î╨╖╨╛╨▓╨░╨╜╨╕╨╡╨╝ ╨╜╨░╤é╤â╤Ç╨░╨╗╤î╨╜╨╛╨╣ ╨║╨╛╨╢╨╕. ╨£╨░╤ü╤é╨╡╤Ç ╨í╨╡╤Ç╨│╨╡╨╣ ╨┐╨╛╨╖╨░╨▒╨╛╤é╨╕╨╗╤ü╤Å ╨╛ ╤é╨╛╨╝, ╤ç╤é╨╛╨▒╤ï ╨║╨░╨╢╨┤╤ï╨╣ ╤ì╨║╨╖╨╡╨╝╨┐╨╗╤Å╤Ç ╨▒╤ï╨╗ ╨▓╤ï╨┐╨╛╨╗╨╜╨╡╨╜ ╨╕╨╜╨┤╨╕╨▓╨╕╨┤╤â╨░╨╗╤î╨╜╨╛ ╨╕ ╤ü ╨╝╨░╨║╤ü╨╕╨╝╨░╨╗╤î╨╜╨╛╨╣ ╤é╨░╨║╤é╨╕╨╗╤î╨╜╨╛╨╣ ╨╛╤é╨┤╨░╤ç╨╡╨╣. ╨Ü╨╗╨╡╨╣╨╝╨╛ ╨╜╨░ ╨┐╨╡╤Ç╨╡╨┤╨╜╨╡╨╣ ╤ü╤é╨╛╤Ç╨╛╨╜╨╡ ╨▓╤ï╨┐╨╛╨╗╨╜╨╡╨╜╨╛ ╨┐╨╛ ╤ü╨┐╨╡╤å╨╕╨░╨╗╤î╨╜╨╛╨╣ ╤é╨╡╤à╨╜╨╛╨╗╨╛╨│╨╕╨╕ ╨│╨╛╤Ç╤Å╤ç╨╡╨│╨╛ ╨║╨╗╨╡╨╣╨╝╨╗╨╡╨╜╨╕╤Å ╨╛╨┐╤Ç╨░╨▓╨║╨╛╨╣ ╨╕╨╖ ╨░╨▓╨╕╨░╤å╨╕╨╛╨╜╨╜╨╛╨│╨╛ ╨░╨╗╨╗╤Ä╨╝╨╕╨╜╨╕╤Å.",
+            "image": "",
+            "price": "7500.00",
+            "discount": "10.00",
+            "count": 4,
+            "category": 5
+        }
+    }
+]
