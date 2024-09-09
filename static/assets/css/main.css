@@ -3075,3 +3075,7 @@ ul.social li a.fa-google-plus:hover {
 	color: #333;
 	white-space: nowrap;
 }
+
+.login {
+	align-content: center;
+}
