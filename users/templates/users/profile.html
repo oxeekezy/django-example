@@ -1,0 +1,24 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block main_content %}
+<!-- Main -->
+    <section id="main">
+    <div class="container">
+        <header class="major">
+            <h2>Мой профиль</h2>
+        </header>
+        <div class="row">
+            <img class="avatar" src="{% static "images/pic02.jpg" %}"  alt=""/>
+            <div class="col">
+                <p>Имя пользователя: <strong> </strong></p>
+                <p>Имя: <strong> </strong></p>
+                <p>Фамилия: <strong> </strong></p>
+            </div>
+        </div>  
+        <header class="major">
+            <h2>История заказов</h2>
+        </header>
+    </div>
+    </section>
+{% endblock main_content %}

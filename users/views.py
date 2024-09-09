@@ -11,7 +11,7 @@ def login(request):
 def register(request):
     context = {}
 
-    return render(request, "users/login.html", context)
+    return render(request, "users/register.html", context)
 
 
 def logout(request):
@@ -23,4 +23,4 @@ def logout(request):
 def profile(request):
     context = {}
 
-    return render(request, "users/login.html", context)
+    return render(request, "users/profile.html", context)

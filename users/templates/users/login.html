@@ -3,8 +3,8 @@
 <html>
 
 <head>
-      <title>HTML Login Form</title>
-      <link rel="stylesheet" href="{% static "assets\css\login.css" %}">
+      <title></title>
+      <link rel="stylesheet" href="{% static "assets\css\auth.css" %}">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                   <input type="password"
                          id="password" 
                          name="password"
-                         placeholder="Введите свой пароль" required>
+                         placeholder="Введите пароль" required>
 
                   <div class="wrap">
                         <button type="submit"
@@ -35,12 +35,12 @@
                         </button>
                   </div>
             </form>
-            <a href="#"
+            <a href="{% url "main:index" %}"
                      style="text-decoration: none;">
                         Обратно на сайт
                   </a>
             <p>Не зарегестрированы?
-                  <a href="#"
+                  <a href="{% url "users:register" %}"
                      style="text-decoration: none;">
                         Создайте аккаунт
                   </a>

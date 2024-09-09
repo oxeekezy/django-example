@@ -3076,6 +3076,7 @@ ul.social li a.fa-google-plus:hover {
 	white-space: nowrap;
 }
 
-.login {
-	align-content: center;
+.avatar {
+	width: 250px;
+	height: 250px;
 }
