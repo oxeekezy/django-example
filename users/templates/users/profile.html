@@ -9,7 +9,7 @@
             <h2>Мой профиль</h2>
         </header>
         <div class="row">
-            <img class="avatar" src="{% static "images/pic02.jpg" %}"  alt=""/>
+            <img class="avatar" src="{% static "images/user.png" %}"  alt=""/>
             <div class="col">
                 <p>Имя пользователя: <strong> </strong></p>
                 <p>Имя: <strong> </strong></p>
@@ -19,6 +19,45 @@
         <header class="major">
             <h2>История заказов</h2>
         </header>
+
+        <table>
+            <tr>
+                <td><strong>ID заказа</strong></td>
+                <td><strong>Время заказа</strong></td>
+                <td><strong>Стоимость</strong></td>
+                <td><strong>Статус</strong></td>
+                <td><strong>Состав</strong></td>
+            </tr>
+            <tr>
+                <td>000001</td>
+                <td>26.10.2024 17:56:28</td>
+                <td>9900 Р</td>
+                <td>Доставлено</td>
+                <td><a>Просмотр</a></td>
+            </tr>
+            <tr>
+                <td>027801</td>
+                <td>26.10.2024 17:56:28</td>
+                <td>17399 Р</td>
+                <td>В обработке</td>
+                <td><a>Просмотр</a></td>
+            </tr>
+            <tr>
+                <td>030471</td>
+                <td>26.10.2024 17:56:28</td>
+                <td>990 Р</td>
+                <td>Доставлено</td>
+                <td><a>Просмотр</a></td>
+            </tr>
+            <tr>
+                <td>500001</td>
+                <td>26.10.2024 17:56:28</td>
+                <td>556783 Р</td>
+                <td>В сборке</td>
+                <td><a>Просмотр</a></td>
+            </tr>
+        </table>
+
     </div>
     </section>
 {% endblock main_content %}
