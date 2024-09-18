@@ -1,0 +1,32 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block additional_styles %}
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+{% endblock additional_styles %}
+
+{% block main_content %}
+<section id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <section>
+                    <header class="major">
+                        <h2>{{video.name}}</h2> 
+                    </header>
+                    <video src="{{video.video.url}}" poster="{% if video.preview %}
+                                                                video.preview.url
+                                                            {% else %}
+                                                                {% static "images/no_image.jpg" %}
+                                                            {% endif %}" 
+                                                            controls>
+                    </video>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock main_content %}

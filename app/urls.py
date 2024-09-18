@@ -28,6 +28,7 @@ urlpatterns = [
     path("", include("main.urls", namespace="main")),
     path("catalog/", include("merch.urls", namespace="merch")),
     path("user/", include("users.urls", namespace="users")),
+    path("video/", include("videocourses.urls", namespace="video")),
 ]
 
 if settings.DEBUG:

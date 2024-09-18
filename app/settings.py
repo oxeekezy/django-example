@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "merch",
     "utils",
     "users",
+    "videocourses",
 ]
 
 MIDDLEWARE = [

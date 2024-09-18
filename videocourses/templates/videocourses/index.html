@@ -1,0 +1,51 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block additional_styles %}
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+{% endblock additional_styles %}
+
+{% block main_content %}
+<section id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <section>
+                    <header class="major">
+                        <h2>Список видео</h2> 
+                    </header>
+                    <div class="row">
+                        {% for video in video_list %}
+                        <div class="h-100 col-4 col-6-medium col-12-small">
+                            <section class="box">
+                                <a href="#" class="image featured">
+                                    
+                                    {% if video.preview %}
+                                        <img src="{{video.preview.url}}" height="300" alt="Изображения пока нет" />
+                                    {% else %}
+                                        <img src="{% static "images/no_image.jpg" %}" height="300" alt="Изображения пока нет" />  
+                                    {% endif %}
+                                </a>
+                                <header>
+                                    <h3>{{video.name}}</h3>
+                                </header>
+                                <footer>
+                                    <ul class="actions">
+                                        <li>
+                                            <a href="{% url "video:video" video.slug %}" class="button alt">Смотреть</a>
+                                        </li>
+                                    </ul>
+                                </footer>
+                            </section>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock main_content %}
