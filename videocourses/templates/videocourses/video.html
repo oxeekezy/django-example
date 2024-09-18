@@ -15,13 +15,11 @@
                     <header class="major">
                         <h2>{{video.name}}</h2> 
                     </header>
-                    <video src="{{video.video.url}}" poster="{% if video.preview %}
-                                                                video.preview.url
-                                                            {% else %}
-                                                                {% static "images/no_image.jpg" %}
-                                                            {% endif %}" 
-                                                            controls>
-                    </video>
+                    {% if video.preview %}
+                        <video src="{{video.video.url}}" poster="{{video.preview.url}}"controls></video>
+                    {% else %}
+                        <video src="{{video.video.url}}" poster="{% static "images/no_image.jpg" %}"controls></video>
+                    {% endif %}
                 </section>
             </div>
         </div>
